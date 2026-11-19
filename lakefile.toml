@@ -1,6 +1,12 @@
 name = "HCPLatticeEvolutionStability"
 version = "0.1.0"
-defaultTargets = ["HCPLattice", "EvolutionSchemeStability"]
+defaultTargets = [
+  "HCPLattice",
+  "EvolutionSchemeStability",
+  "SecondFiniteDifference",
+  "HCPPacking",
+  "RationalClearanceRegularizer"
+]
 
 [[require]]
 name = "mathlib"
@@ -11,3 +17,12 @@ name = "HCPLattice"
 
 [[lean_lib]]
 name = "EvolutionSchemeStability"
+
+[[lean_lib]]
+name = "SecondFiniteDifference"
+
+[[lean_lib]]
+name = "HCPPacking"
+
+[[lean_lib]]
+name = "RationalClearanceRegularizer"

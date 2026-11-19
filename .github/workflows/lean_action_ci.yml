@@ -11,4 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: leanprover/lean-action@v1
+      - name: Install Lean (elan)
+        run: |
+          curl https://lean-lang.org -sSf | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
+      - name: Generate manifest and fetch Mathlib cache
+        run: |
+          lake update
+          lake exe cache get
+      - name: Build Lean modules
+        run: lake build

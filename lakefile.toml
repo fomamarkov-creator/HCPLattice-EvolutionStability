@@ -1,0 +1,13 @@
+name = "HCPLatticeEvolutionStability"
+version = "0.1.0"
+defaultTargets = ["HCPLattice", "EvolutionSchemeStability"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[[lean_lib]]
+name = "HCPLattice"
+
+[[lean_lib]]
+name = "EvolutionSchemeStability"

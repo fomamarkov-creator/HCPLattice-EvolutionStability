@@ -1,3 +1,5 @@
+[![Lean Action CI](https://github.com/fomamarkov-creator/HCPLattice-EvolutionStability/actions/workflows/lean_action_ci.yml/badge.svg)](https://github.com/fomamarkov-creator/HCPLattice-EvolutionStability/actions/workflows/lean_action_ci.yml)
+
 # HCP Lattice Geometry & Evolution Scheme Stability in Lean 4
 
 Formal machine verification in **Lean 4** (Mathlib) covering 3D Hexagonal Close-Packed (HCP) lattice geometry, optimal sphere packing density, second-order finite-difference convergence, rational barrier regularizers, and energy dissipation bounds for numerical evolution schemes.

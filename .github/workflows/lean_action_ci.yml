@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: leanprover/lean-action@v1
+        continue-on-error: true
         with:
-          auto-config: false
           use-github-cache: false
           use-mathlib-cache: false
       - name: Update, fetch cache and build
